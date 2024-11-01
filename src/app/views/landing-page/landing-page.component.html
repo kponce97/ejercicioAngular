@@ -1,0 +1,45 @@
+<!-- TODO: MAIN -->
+<!--
+* ESTA ES UNA ICON CARD 
+		<div class="feature-icon">
+			<i class="material-icons">add_box</i>
+		</div>
+		<div>
+			<h4>Easy to use</h4>
+			<p>Editin and customizing Essential Landing is easy and fast.</p>
+		</div>
+ -->
+<!--
+ * Otra alternativa para optimizar
+ <!--? 1° IconCARD 
+ <app-icon-card
+ icon="add_box"
+ title="Easy to use"
+ description="Editin and customizing Essential Landing is easy and fast."
+></app-icon-card>
+<!--? 2° IconCARD 
+<app-icon-card
+ icon="star_half"
+ title="Easy to use"
+ description="Editin and customizing Essential Landing is easy and fast."
+></app-icon-card>
+<!--? 3° IconCARD 
+<app-icon-card
+ icon="system_update_alt"
+ title="+50 New Pages"
+ description="Editin and customizing Essential Landing is easy and fast."
+></app-icon-card>
+
+  -->
+<!--? Section: Presentation -->
+<app-presentation></app-presentation>
+
+<section class="features">
+	
+	<app-icon-card
+		*ngFor="let feature of features" 
+		[icon]="feature.icon"
+		[title]="feature.title"
+		[description]="feature.description"
+	></app-icon-card>
+</section>
